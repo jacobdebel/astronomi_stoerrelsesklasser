@@ -1,0 +1,187 @@
+#+title: Størrelsesklasser
+#+subtitle: Astronomi C & Fysik B
+#+author: Jacob Debel
+#+date: 
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background:
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+
+* Hvad og hvordan kan man måle på en stjerne?
+  
+* Lyset!
+#+reveal_html: <div style="font-size: 80%;">
+- Flux
+- +Luminositet+ (kan ikke måles direkte, mens bruges meget)
+- Spektralanalyse
+
+** Flux    
+- Energi som strømmer gennem et enhedsareal pr. sekund. $\left[ W/m^2 \right]$
+- Kan måles med f.eks. et pyrheliometer
+#+DOWNLOADED: file:///home/jde/NEXTKBH/Fysik/Fysik_A/Skriftlige_eksamenssaet/2016_juni/files/51401_billede_opg2.png @ 2019-09-01 11:52:19
+#+attr_html: :width 80%
+[[file:img/51401_billede_opg2_2019-09-01_11-52-19.png]]
+
+
+** +Luminositet+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Den samlede effekt, som udstråles fra en stjerne. $\left[ W \right]$.
+- Kan ikke måles direkte fra Jorden. Kan beregnes ud fra afstanden mellem Jorden og stjernen samt fluxen.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: http://astronomy.swin.edu.au/cms/cpg15x/albums/userpics/flux-img2.gif @ 2019-09-01 11:56:21
+#+attr_html: :width 100%
+[[file:img/flux-img2_2019-09-01_11-56-21.gif]]
+#+reveal_html: </div>
+
+
+** Spektralanalyse
+   
+   - Mål hver enkelt bølgelængdes relative intensitet.
+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+DOWNLOADED: https://www.e-education.psu.edu/astro801/sites/www.e-education.psu.edu.astro801/files/image/Lesson%203/648px-Wiens_law_svg.png @ 2019-09-01 12:00:51
+#+attr_html: :width 100%
+[[file:img/648px-Wiens_law_svg_2019-09-01_12-00-51.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: https://www.researchgate.net/profile/Olac_Fuentes/publication/254719006/figure/fig1/AS:297707164979200@1447990327276/Sample-stellar-spectrum.png @ 2019-09-01 12:16:12
+#+attr_html: :width 100%
+[[file:img/Sample-stellar-spectrum_2019-09-01_12-16-12.png]]
+#+reveal_html: </div>
+
+* Afstanden
+
+** Direkte målinger af afstande
+
+   - Radarmåling
+   - Parallakse
+   
+** Radarmåling
+   - Udsend radarsignal og mål tiden til signalet kommer tilbage.
+   - Dur kun til at måle afstande til Solen eller planeter i det nære solsystem.
+   - Beregning af den astronomiske enhed $$1AU = 149 597 870 km$$
+
+** Parallakse
+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Virker kun for de nærmeste stjerner.
+- Begrænset til 100 pc (/parsec/) $1pc =3.26 ly$. $Ø_\text{mælkevej}\approx 30 000 pc$
+- Se efter, om en nær stjerne flytter sig ift. de bagvedliggende "stationære" stjerner.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-09-01 12:31:49
+#+attr_html: :width 100%
+[[file:img/screenshot_2019-09-01_12-31-49.png]]
+#+reveal_html: </div>
+
+* Konklusion
+
+#+attr_reveal: :frag (appear)
+- Det er "nemt" at måle lyset.
+- Det svære er at måle afstande.
+- Alle afstande på den anden side af 100-1000 pc beror på astronomiske /modeller/.
+
+  
+* Størrelsesklasser
+
+- Visuel størrelsesklasse
+- Absolut størrelsesklasse
+
+** Visuel størrelsesklasse
+   
+#+attr_reveal: :frag (appear)
+- /Sammenligning/ af stjerner.
+- /Hipparchos/ 2000 BC: 
+  - 1: De klareste stjerner på himlen.
+  - 6: De stjerner som netop lige kan skimtes.
+- Jo større tal, jo mindre lys.
+
+** Visuel størrelsesklasse
+#+attr_reveal: :frag (appear)
+- Logaritmisk skala
+- $m = k + K\cdot \log(\phi)$
+- $m = -18.91 - 2.5 \cdot \log (\phi)$ hvis fluxen ($\phi$) måles i $W/m^2$.
+  
+** Visuel størrelsesklasse
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-09-01 12:54:24
+#+attr_html: :width 50%
+[[file:img/screenshot_2019-09-01_12-54-24.png]]
+
+** Visuel størrelsesklasse
+- Lille lyssvag stjerne tæt på Jorden kan have samme visuelle størrelsesklasse, som en stor lysstærk stjerne længere væk fra Jorden.
+  
+| Udstyr                | grænse      |
+|-----------------------+-------------|
+| De største teleskoper | $30^m$      |
+| Almindelig kikkert    | $9^m$       |
+| Det blotte øje        | $6^m$       |
+| I byen                | $3^m - 4^m$ |
+
+** Absolut størrelsesklasse
+
+- Placér en given stjerne i en afstand på 10 pc fra iagttageren.
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-09-01 13:04:39
+#+attr_html: :width 47%
+[[file:img/screenshot_2019-09-01_13-04-39.png]]
+
+** Absolut størrelsesklasse
+
+Sammenhæng mellem visuel og absolut størrelsesklasse
+
+$$M = m - 5 \cdot \log \left( \frac{r}{10pc} \right)$$
+
+Afstanden skal måles i pc
+
+** Absolut størrelsesklasse
+
+Sirius: $m_s=-1.46$, $r_s=8.8ly$
+
+\begin{align*}
+M_s &= m - 5 \cdot \log \left( \frac{r_s}{10pc} \right)\\
+M_s &= -1.46 - 5 \cdot \log \left( \frac{8.8ly}{10pc\cdot 3.26 ly/pc} \right)\\
+M_s &= 1.38
+\end{align*}
+
+** Absolut størrelsesklasse
+
+Solen: $m_\odot=-26.8$, $r_\odot=1 AU$
+
+\begin{align*}
+M_\odot &= m_{\odot} - 5 \cdot \log \left( \frac{r_\odot}{10pc} \right)\\
+M_\odot &= -26.8 - 5 \cdot \log \left( \frac{1 AU}{10pc\cdot 20.6\cdot 10^{4} AU/pc} \right)\\
+M_\odot &= 4.8
+\end{align*}
+
+** Absolut størrelsesklasse
+- $M_s = 1.38$
+- $M_\odot = 4.8$
+Sirius er altså en noget større og noget mere lysstærk stjerne en Solen.
+
+** Sammenligning af stjerner
+   
+\begin{align*}
+m_A - m_B &= -2.5 \cdot \log \left( \frac{\phi_A}{\phi_B} \right)\\
+M_A - M_B &= -2.5 \cdot \log \left( \frac{L_A}{L_B} \right)
+\end{align*}
+
+$\phi$ kan udskriftes med $L$ da $\phi = \frac{L}{4 \pi r^2}$.
+
+* Opgaver
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-09-01 13:31:07
+#+attr_html: :width 70%
+[[file:img/screenshot_2019-09-01_13-31-07.png]]
+
+Side 37 i stjerner.pdf
+
